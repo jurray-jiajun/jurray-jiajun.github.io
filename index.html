@@ -28,11 +28,32 @@
                 font-family: 'FangSong', 'STFangsong', serif, 'Lato', Verdana, Helvetica, sans-serif;
                 font-weight: 800;
             }
+
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+
             .tooltip {
                 position: relative;
                 display: inline-block;
                 /* border-bottom: 1px dotted black; 悬停元素上显示点线 */
             }
+
+            .left-braket {
+                /* font-weight: bold; */
+                /* color: #8C1515;  */
+                font-size: 50%; 
+                vertical-align: top;
+            }
+
+            .right-braket {
+                /* font-weight: bold; */
+                /* color: #8C1515;  */
+                font-size: 50%; 
+                /* vertical-align: bottom; */
+            }
+
             .question-mark {
                 cursor: pointer;
                 font-weight: bold;
@@ -97,6 +118,16 @@
                                 More
                             </a>
                         </li>
+                        <!-- <li>
+                            <button onclick="myFunction()">Mode</button>
+
+                                <script>
+                                function myFunction() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                                }
+                                </script>
+                        </li> -->
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
@@ -159,7 +190,9 @@
             <!--==================== NEWS ====================-->
             <section class="section" id="news">
                 <div class="container grid">
-                    <div class="paragraph">News</div>
+                    <div class="paragraph"><span class="left-braket">「</span>News<span class="right-braket">」</span>
+                        <!-- <br><hr> -->
+                    </div>
                     <ul>
                         <li>xx/2023: <i>Placeholder</i>.</li>
                     </ul>
@@ -172,7 +205,9 @@
                 <!-- <h2 class="section__title">Research</h2> -->
                 <!-- <span class="section__subtitle">Publications</span> -->
                 <div class="services__container container grid">
-                    <div class="paragraph">Research</div>
+                    <div class="paragraph"><span class="left-braket">「</span>Research<span class="right-braket">」</span>
+                        <!-- <br><hr> -->
+                    </div>
                     <!--======== Paper 7 =========-->
                     <div class="services__content">
                         <div class="research__content">
@@ -226,8 +261,10 @@
 
           
             <section class="section" id="misc">
-                <div class="container">
-                    <div class="paragraph">Misc</div>
+                <div class="container grid">
+                    <div class="paragraph"><span class="left-braket">「</span>Misc<span class="right-braket">」</span>
+                        <!-- <br><hr> -->
+                    </div>
                     <p>
                         In addition to my academic interest in AI, I am also fascinated by the following topics.
                         Feel free to contact me if there is a chance for communication. I'm glad to know that we share common interests.
