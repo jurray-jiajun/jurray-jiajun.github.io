@@ -28,6 +28,36 @@
                 font-family: 'FangSong', 'STFangsong', serif, 'Lato', Verdana, Helvetica, sans-serif;
                 font-weight: 800;
             }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                /* border-bottom: 1px dotted black; 悬停元素上显示点线 */
+            }
+            .question-mark {
+                cursor: pointer;
+                font-weight: bold;
+                color: #8C1515; /* Change the color as needed */
+                font-size: 30%; /* Adjust the font size to make it smaller */
+                vertical-align: top; /* Display the question mark as a superscript */
+                }
+            
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                position: absolute;
+                background-color: #f9f9f9;
+                width: 20em;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                font-size: 60%;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
         </style>
         
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-V93E5N1Y9R"></script>
@@ -86,22 +116,42 @@
             <a class="anchor" id="home"></a>
             <section class="section">
                 <div class="container">
-                    <img class="margin" src="images/profile.png" width="100%">
-                    <h2 align="center" class="home__title">Jiajun Zhu<span>「祝家俊」</span></h2>
-                    <p>
-                        I'am now a senior student of Mathematics at Zhejiang University, with a minor in Management, specifically in the <a href="http://ckc.zju.edu.cn/ckcen/2022/0225/c44633a2500643/page.htm">Intensive Training Program</a>  of the Chu Kochen Honors College. 
-                        I’m working on machine learning on graphs and interpretable machine learning. Currently, I focus on explainable and trustworthy geometric deep learning (GDL) for science. 
-                        I am grateful to receive advice from <a href="http://yangy.org/">Yang Yang</a> and <a href="https://sites.google.com/view/panli-purdue">Pan Li</a>.
-                    </p>
-                    <p>
-                        Email: junnian at zju dot edu dot cn
-                    </p>
-                    <p style="text-align:center">
-                        <a href="resume/Jiajun_Resume.pdf">CV</a> &nbsp/&nbsp
-                        <a href="https://scholar.google.com/citations?user=mMPLH_kAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                        <a href="https://github.com/lanczoschu">Github</a>
-                        
-                    </p>
+                    <table><tbody>
+                        <tr style="padding:0px">
+                            <td>
+                                <h2 align="center" class="home__title">Jiajun Zhu
+                                    <span class="tooltip"><span class="question-mark">「N.B」</span>
+                                    <span class="tooltiptext">
+                                        My Chinese given name is 家俊(jiajun), pronounced as 家/dʒia/ 俊/dʒyn/. 
+                                        <br>My Chinese surname is 祝(zhu), pronounced as /tʃu/ or /dʒu/. 
+                                        <br>It’s also fine to call me Lanczos.
+                                    </span>
+                                    </span>
+            
+                                </h2>
+                                <p>
+                                    I'am now a senior student of Mathematics at Zhejiang University, with a minor in Management, specifically in the <a href="http://ckc.zju.edu.cn/ckcen/2022/0225/c44633a2500643/page.htm">Intensive Training Program</a>  of the Chu Kochen Honors College. 
+                                    I’m working on machine learning on graphs and interpretable machine learning. Currently, I focus on explainable and trustworthy geometric deep learning (GDL) for science. 
+                                    I am grateful to receive advice from <a href="http://yangy.org/">Yang Yang</a> and <a href="https://sites.google.com/view/panli-purdue">Pan Li</a>.
+                                </p>
+                                <p>
+                                    Email: junnian at zju dot edu dot cn
+                                </p>
+                                <p style="text-align:center">
+                                    <a href="resume/Jiajun_Resume.pdf">CV</a> &nbsp/&nbsp
+                                    <a href="https://scholar.google.com/citations?user=mMPLH_kAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                                    <a href="https://github.com/lanczoschu">Github</a>
+                                    
+                                </p>
+                            </td>
+                            <td style="padding:2.5%;width:30%;max-width:30%">
+                                <img class="margin" src="images/profile.png" width="100%">
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    
                     
                 </div>
             </section>
